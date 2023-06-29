@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="./Script.js">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="##">Home</a></li>
+            <li><a href="##">About</a></li>
+            <li><a href="##">Projects</a></li>
+            <li><a href="##">Contact</a></li>
+        </ul>
+    </header>
+<div id="Topsection">
+    
+    <h1>Welcome to My Portfolio</h1>
+    <h4>Passionate about creating innovative web solutions</h4>
+    <button class="btn1" onclick="change()">Get in Touch</button>
+</div>
+
+
+<div >
+    <h3 style="font-size: 24px ;">About Me</h3>
+<p>I am web Developer with experties in front - end technologies . I love designing and building user friendly interface that provide a greate user experience.</p>
+
+</div>
+<br>
+
+
+<div >
+    <h2 onclick="update()">My Projects</h2>
+    <img src="download.jpg" alt="image not found">
+</div>
+
+
+
+<div >
+<h2 onclick="update()">Project 1</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore velit architecto cumque distinctio accusantium maxime id harum.</p>
+<img src="images.jpg" alt="image not found">
+</div>
+
+
+
+<div>
+    <h2 onclick="update()">Project 2</h2>
+    <p>Veniam, hic voluptas distinctio consequuntur, quia impedit, repudiandae sapiente laborum explicabo voluptatem sed reprehenderit incidunt esse quidem?</p>
+</div>
+
+
+<br>
+<form action="" >
+    <h1>Contact me</h1>
+    <input type="text" id="name" name="Name" value="" placeholder="Name"><br>
+    <br>
+    <input type="email" id="email" name="email" value="" placeholder="Email"><br>
+    <br>
+    <textarea  name="message" id="message" cols="30" rows="10" placeholder="Message ....."></textarea>
+</form>
+
+
+<script>
+    function change(){
+        let a = document.getElementById("Topsection");
+        a.style.background="aqua";
+    }
+
+
+    function  update(){
+        let x = document.getElementsByTagName("h2");
+        x[0].style.textDecoration="underline"
+        x[1].style.textDecoration="underline"
+        x[2].style.textDecoration="underline"
+        x[2].style.textDecoration="underline"
+    }
+</script>
+</body>
+</html>
